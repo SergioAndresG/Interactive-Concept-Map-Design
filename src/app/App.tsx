@@ -7,7 +7,7 @@ import { AlertTriangle } from 'lucide-react';
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0D1B2A] overflow-x-auto">
-      <div className="relative min-w-[1400px] min-h-screen pb-16 p-8">
+      <div className="relative w-[1400px] min-h-screen pb-16 p-8 mx-auto">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -42,42 +42,36 @@ export default function App() {
             start={{ x: 610, y: 235 }}
             end={{ x: 400, y: 180 }}
             color="#00C2FF"
-            label="define →"
             delay={0.2}
           />
           <CurvedArrow
             start={{ x: 555, y: 280 }}
             end={{ x: 200, y: 350 }}
             color="#00E5A0"
-            label="requiere →"
             delay={0.3}
           />
           <CurvedArrow
             start={{ x: 620, y: 345 }}
             end={{ x: 450, y: 550 }}
             color="#FFB547"
-            label="se cifra con →"
             delay={0.4}
           />
           <CurvedArrow
             start={{ x: 845, y: 300 }}
             end={{ x: 1020, y: 480 }}
             color="#00E5A0"
-            label="se descifra con →"
             delay={0.5}
           />
           <CurvedArrow
             start={{ x: 820, y: 235 }}
             end={{ x: 1050, y: 150 }}
             color="#FFB547"
-            label="condición →"
             delay={0.6}
           />
           <CurvedArrow
             start={{ x: 780, y: 345 }}
             end={{ x: 950, y: 780 }}
             color="#00C2FF"
-            label="análisis →"
             delay={0.7}
           />
         </svg>
@@ -90,7 +84,7 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="absolute"
-            style={{ left: '50%', top: '300px', transform: 'translate(-50%, -50%)' }}
+            style={{ left: '40%', top: '110px', transform: 'translate(-50%, -50%)' }}
           >
             <ConceptNode color="cyan" glow className="w-[300px]">
               <h2 className="text-3xl font-bold text-white text-center mb-2">
@@ -126,7 +120,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
             className="absolute"
-            style={{ left: '30px', top: '280px', width: '340px' }}
+            style={{ left: '-20px', top: '200px', width: '340px' }}
           >
             <h3 className="text-[#00E5A0] font-bold text-lg mb-3">Ingredientes clave</h3>
             <ConceptNode color="green" className="mb-3">
@@ -169,7 +163,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
             className="absolute"
-            style={{ left: '80px', top: '620px', width: '380px' }}
+            style={{ left: '340px', top: '460px', width: '380px' }}
           >
             <h3 className="text-[#FFB547] font-bold text-lg mb-3">¿Cómo se cifra?</h3>
             <div className="space-y-2">
@@ -185,11 +179,11 @@ export default function App() {
           {/* Example Box (Bottom Left - Sticky Note Style) */}
           <motion.div
             initial={{ opacity: 0, rotate: -5 }}
-            animate={{ opacity: 1, rotate: -3 }}
+            animate={{ opacity: 1 , rotate: -3 }}
             whileHover={{ rotate: 0, scale: 1.05 }}
             transition={{ delay: 1.0 }}
             className="absolute bg-[#FFB547] rounded-lg shadow-xl p-4"
-            style={{ left: '120px', top: '1040px', width: '280px' }}
+            style={{ left: '380px', top: '890px', width: '280px' }}
           >
             <p className="text-[#0D1B2A] font-bold text-sm mb-2">📌 Ejemplo:</p>
             <p className="text-[#0D1B2A] text-sm font-mono">
@@ -206,7 +200,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
             className="absolute"
-            style={{ left: '1000px', top: '420px', width: '360px' }}
+            style={{ left: '1000px', top: '290px', width: '360px' }}
           >
             <h3 className="text-[#00E5A0] font-bold text-lg mb-3">¿Cómo se descifra?</h3>
             <div className="space-y-2">
@@ -223,7 +217,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
             className="absolute"
-            style={{ left: '1000px', top: '60px', width: '360px' }}
+            style={{ left: '1040px', top: '-19px', width: '360px' }}
           >
             <ConceptNode color="amber" warning>
               <div className="flex items-start gap-3 mb-3">
@@ -247,7 +241,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
             className="absolute"
-            style={{ left: '900px', top: '720px', width: '480px' }}
+            style={{ left: '780px', top: '620px', width: '480px' }}
           >
             <h3 className="text-white font-bold text-lg mb-3">Fortaleza vs Limitación</h3>
             <div className="flex gap-4">
